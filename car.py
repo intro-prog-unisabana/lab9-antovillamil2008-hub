@@ -13,4 +13,4 @@ class Car:
         self.mileage+=miles
     
     def __str__(self):
-        return f"¨{self.car_id} - {self.year} {self.color} {self.brand} with {self.mileage} miles"
+        return f"{self.car_id} - {self.year} {self.color} {self.brand} with {self.mileage} miles"
