@@ -6,7 +6,7 @@ class Song:
         self.length = float(length)
     
     def __str__(self):
-        return f"'{self.name}' by {self.artist} {self.length}"
+        return f"'{self.name}' by {self.artist} ({self.length})"
     
     def get_length_in_seconds(self):
         return self.length*60
