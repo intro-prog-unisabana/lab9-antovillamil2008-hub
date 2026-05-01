@@ -15,7 +15,7 @@ class BankAccount:
     
     def __str__(self):
         return f"""
-Account Number: **{str(self.account_number)[-2:]}
+Account Number: {str(self.account_number)[-2:]}
 Current Balance: {self.balance:.2f}"""
     
 
