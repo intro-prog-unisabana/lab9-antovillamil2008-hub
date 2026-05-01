@@ -33,7 +33,7 @@ def main():
                     person.add_account(new_account)
                     encontrado = True
                     break
-                if not encontrado:
+            if not encontrado:
                     print("Person not found.")
 
         # Option 3: Show all balances
