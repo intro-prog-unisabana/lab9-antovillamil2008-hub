@@ -1,4 +1,6 @@
-# TODO: Import modules
+from car_utils import*
+from car import*
+
 def main():
     cars = {}  # Dictionary to store cars with car_id as key and car objects as values
 
@@ -15,23 +17,37 @@ def main():
         if choice == '1':
           """TODO: Call the appropriate function from utils.py to create 
           the car, add it to the dictionary, and print the car."""
+          nuevo_auto=create_car_from_input()
+          cars[nuevo_auto.car_id]=nuevo_auto
+          print(nuevo_auto)
+          print("Car added.")
 
 
         elif choice == '2':
           """TODO: Call the appropriate function from utils.py to display
           all the cars in the cars dictionary."""
+          display_cars(cars)
+          
 
         elif choice == '3':
           car_id = input("Enter the car ID to drive:\n")
           miles = float(input("How many miles to drive?\n"))
           """TODO: Look up the car in the dictionary, call the appropriate
           class method to increase the mileage of the car, and print the car."""
-          
+          modificar=cars[car_id]
+          modificar.drive(miles)
+          print("Mileage updated.")
+          print(cars[car_id])
+
         elif choice == '4':
           car_id = input("Enter the car ID to paint:\n")
           new_color = input("Enter the new color:\n")
           """TODO: Look up the car in the dictionary, call the appropriate
           class method to change the color of the car, and print the car."""
+          carro_a_modificar=cars[car_id]
+          carro_a_modificar.change_color(new_color)
+          print("Color updated.")
+          print(cars[car_id])
 
         elif choice == '5':
             print("Goodbye!")

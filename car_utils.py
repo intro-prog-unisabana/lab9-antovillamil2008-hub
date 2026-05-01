@@ -1,5 +1,5 @@
 # FREEZE CODE BEGIN
-from car import *
+from car import Car
 
 def create_car_from_input():
     car_id = input("Enter car ID (e.g., CAR001):\n")
@@ -11,6 +11,6 @@ def create_car_from_input():
 
 def display_cars(car_dict):
   for car in car_dict.values():
-     print(car)
+     return print(car)
 # FREEZE CODE END
 
